@@ -1,2 +1,22 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Declare that Unity data files that will always have LF line endings on checkout.
+# Provided by russ https://stackoverflow.com/questions/29049922/git-line-endings-will-be-replaced-error
+*.unity text eol=lf
+*.asset text eol=lf
+*.anim text eol=lf
+*.lighting text eol=lf
+*.renderTexture text eol=lf
+*.wlt text eol=lf
+*.controller text eol=lf
+*.preset text eol=lf
+*.overrideController text eol=lf
+*.guiskin text eol=lf
+*.mat text eol=lf
+*.mask text eol=lf
+*.spriteatlas text eol=lf
+*.meta text eol=lf
+*.prefab text eol=lf
+
+# Declaring more files have LF line endings on checkout
+*.json text eol=lf
+*.txt text eol=lf
+*.cs text eol=lf
