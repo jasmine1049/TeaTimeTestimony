@@ -74,7 +74,7 @@
 
 ## Resources and Help
 
-- Ping Sammy / DrQuackeroo on Discord for help (the author of this guide).
+- Ping Sammy / DrQuackeroo on Discord for help (the author of this guide, he's 100% super awesome).
 - [Official Help from GitHub](https://docs.github.com/en/get-started/quickstart/create-a-repo)
     - I recommend creating your own private repository to play around with.
 - [Additional reading for using GitHub Desktop](https://docs.github.com/en/desktop)
