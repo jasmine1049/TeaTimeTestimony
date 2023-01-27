@@ -7,7 +7,7 @@
     - You can use the default option if the information is correct.
     - *Note:* This information will be attached to every change you make.
 4. At the top of the screen/window, click 'File' -> 'Clone repository...'
-5. Select the URL tab and enter [https://github.com/DrQuackeroo/MagicalGirlGame](https://github.com/DrQuackeroo/MagicalGirlGame) for the repository URL.
+5. Select the URL tab and enter [https://github.com/jasmine1049/TeaTimeTestimony](https://github.com/jasmine1049/TeaTimeTestimony) for the repository URL.
     - *Note:* When using GitHub, the link that takes you the GitHub page for the project is also the same link used for cloning.
 6. For the local path, select a folder you want the project to be stored in.
     - The default one is OK, and it mostly doesn't matter where you want to store it.
@@ -51,7 +51,7 @@
 8. At this point, your change (in the form of a commit) is saved on your computer's backup of the project. Verify this is true by clicking the 'History' tab underneath the current repository.
     - *Note:* Your commits are not yet uploaded to the GitHub server for everyone else to see.
 9. To upload your changes to the GitHub servers, at the top bar, click 'Repostiory' -> 'Push'. The 'Push origin' process should start automatically, which updates the server's copy of the project with the one stored in your computer. 
-    - Verify your changes went through by checking the [commit history on GitHub](https://github.com/DrQuackeroo/MagicalGirlGame/commits/main).
+    - Verify your changes went through by checking the [commit history on GitHub](https://github.com/jasmine1049/TeaTimeTestimony/commits/main).
     - Congratulations!
 
 ## Why You Should Not Panic When Using GitHub
