@@ -21,9 +21,9 @@
 
 1. Open the Unity Hub or open Unity directly using your preferred method.
 2. Find and select the option to 'Open an existing project'.
-3. Select the location of the MagicalGirlGame folder that was cloned from GitHub Desktop earlier.
+3. Select the location of the TeaTimeTestimony folder that was cloned from GitHub Desktop earlier.
     - *Hint:* if you didn't change the location, it might be in Documents/GitHub.
-    - The MagicalGirlGame folder should contain subfolders titled Assets, Packages, ProjectSettings and other stuff.
+    - The TeaTimeTestimony folder should contain subfolders titled Assets, Packages, ProjectSettings and other stuff.
 4. Wait a minute or two while Unity sets up the project for the first time.
     - *Note:* Git is set up to not store or sync things like add-ons, Unity Store features, or user settings. This is so that everyone can work in the environment they want. With normal use, Git will not delete or modify any such personal settings you use with Unity.
 5. If the editor opens without error, congratulations! Please read and understand the next steps before you make changes to the Unity project.
