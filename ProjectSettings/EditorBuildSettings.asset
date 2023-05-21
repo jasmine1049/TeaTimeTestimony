@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: b71e513a794e0794cabc5f85c19ff5aa
   - enabled: 1
+    path: Assets/Scenes/Setting Menu.unity
+    guid: 7f3853924d4e543bc99e09e7117a1af8
+  - enabled: 1
+    path: Assets/Scenes/Rebind Settings Scene.unity
+    guid: 09c100d0f8bf9415593fc786b8b424d5
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
