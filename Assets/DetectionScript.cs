@@ -12,6 +12,9 @@ public class DetectionScript : MonoBehaviour
     private Vector3 initPlayerPosition;
     private Vector3 initObjPosition;
 
+    private float timeLeft;
+    private string oldTutText;
+
     public bool inRange(Transform playerObj, Vector3 initGameObjPosition)
     {
         float lowXRange = initGameObjPosition.x - 2;
@@ -29,25 +32,62 @@ public class DetectionScript : MonoBehaviour
         return false;
     }
 
+    public bool countDown() 
+    {
+        if (timeLeft > 0)
+        {
+            timeLeft -= 0.001f;
+            return true;
+        }
+
+        timeLeft = (float) 5;
+        return false;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         tutorialText.text = "[WASD to Move]";
         initPlayerPosition = player.position;
         initObjPosition = obj.position;
+        timeLeft = 0;
+        oldTutText = tutorialText.text;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (player.position != initPlayerPosition) 
+        if (!(tutorialText.text == "[E to Interact]"))
         {
-            tutorialText.text = "";
-        }
+            oldTutText = tutorialText.text;
+        }        
 
         if (inRange(player, initObjPosition))
         {
             tutorialText.text = "[E to Interact]";
+        }
+        else
+        {
+            tutorialText.text = oldTutText;
+        }
+
+        if (player.position != initPlayerPosition)
+        {
+            if (!countDown())
+            {
+                if (tutorialText.text == "")
+                {
+                    tutorialText.text = "[TAB to Open Map]";
+                }
+                else if (tutorialText.text == "[TAB to Open Map]")
+                {
+                    tutorialText.text = "[Q to Open Notebook]";
+                }
+                else
+                {
+                    tutorialText.text = "";
+                }
+            }
         }
     }
 }
