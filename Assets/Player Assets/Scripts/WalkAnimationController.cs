@@ -27,7 +27,7 @@ public class WalkAnimationController : MonoBehaviour
         
         if(vertical == 0 && horizontal == 0)
         {
-            Debug.Log("Still");
+            //Debug.Log("Still");
             MC_Animator.SetTrigger("idle");
         }
     }

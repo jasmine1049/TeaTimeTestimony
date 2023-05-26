@@ -15,6 +15,8 @@ public class DetectionScript : MonoBehaviour
     private float timeLeft;
     private string oldTutText;
 
+    public Dialogue tutorialDialogue;
+
     public bool inRange(Transform playerObj, Vector3 initGameObjPosition)
     {
         float lowXRange = initGameObjPosition.x - 2;
@@ -36,11 +38,11 @@ public class DetectionScript : MonoBehaviour
     {
         if (timeLeft > 0)
         {
-            timeLeft -= 0.001f;
+            timeLeft -= Time.deltaTime;
             return true;
         }
 
-        timeLeft = (float) 5;
+        timeLeft = (float) 3;
         return false;
     }
 
@@ -65,6 +67,10 @@ public class DetectionScript : MonoBehaviour
         if (inRange(player, initObjPosition))
         {
             tutorialText.text = "[E to Interact]";
+            if(Input.GetKeyDown("e"))
+            {
+                FindObjectOfType<DialogueManager>().StartDialogue(tutorialDialogue);
+            }
         }
         else
         {
@@ -73,6 +79,7 @@ public class DetectionScript : MonoBehaviour
 
         if (player.position != initPlayerPosition)
         {
+            Debug.Log(timeLeft);
             if (!countDown())
             {
                 if (tutorialText.text == "")
