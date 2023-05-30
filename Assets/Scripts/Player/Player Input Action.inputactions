@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Map",
+                    "name": "OpenMap",
                     "type": "Button",
                     "id": "6fb08fbe-5ace-4489-8564-dffaadefdab6",
                     "expectedControlType": "Button",
@@ -27,6 +27,24 @@
                     "name": "Log",
                     "type": "Button",
                     "id": "5183f9a8-07d6-4f2a-af87-acf573ac85b8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CloseMap",
+                    "type": "Button",
+                    "id": "e1dcb850-b3b8-4c18-9a21-430179e6d65b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MapRedirecting",
+                    "type": "Button",
+                    "id": "c1594368-5c89-4729-9889-8d6aac7cfefb",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -151,7 +169,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Map",
+                    "action": "OpenMap",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -163,6 +181,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Log",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1aedb25c-263a-40cd-ab3b-c848d03afb5f",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CloseMap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "120a5364-532f-4430-b50f-1a5f126bde77",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MapRedirecting",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
