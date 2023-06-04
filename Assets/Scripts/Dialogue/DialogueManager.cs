@@ -64,15 +64,32 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        if(s.isMC == true) 
+        if(s.removeSpeaker.Length > 0)
         {
-            rightImageAnimator.SetBool("IsSpeaking", false);
-            leftImageAnimator.SetBool("IsSpeaking", true);
+            if(s.removeSpeaker[0] == true)
+            {
+                leftImageAnimator.SetBool("IsSpeaking", false);
+                leftImageAnimator.SetBool("IsOpen", false);
+            }
+            if(s.removeSpeaker[1] == true)
+            {
+                Debug.Log("remove right");
+                rightImageAnimator.SetBool("IsSpeaking", false);
+                rightImageAnimator.SetBool("IsOpen", false);
+            }
         }
         else
         {
-            leftImageAnimator.SetBool("IsSpeaking", false);
-            rightImageAnimator.SetBool("IsSpeaking", true);
+            if(s.isMC == true) 
+            {
+                rightImageAnimator.SetBool("IsSpeaking", false);
+                leftImageAnimator.SetBool("IsSpeaking", true);
+            }
+            else
+            {
+                leftImageAnimator.SetBool("IsSpeaking", false);
+                rightImageAnimator.SetBool("IsSpeaking", true);
+            }
         }
 
         nameText.text = s.speakerName;

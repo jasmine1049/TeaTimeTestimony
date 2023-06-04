@@ -11,4 +11,5 @@ public class Sentence
     public Sprite talkerImage;
     public bool introduceSpeaker;
     public bool isMC;
+    public bool[] removeSpeaker; // array size 2. true = remove this speaker. array[i] = remove speaker i.
 }
