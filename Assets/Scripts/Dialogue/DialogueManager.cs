@@ -11,24 +11,29 @@ public class DialogueManager : MonoBehaviour
     public Animator textBoxAnimator;
     public Animator fadeAnimator;
 
-    Queue<string> sentences;
+    //VN Character Display
+    public Image leftCharacterImage;
+    public Animator leftImageAnimator;
+    public Image rightCharacterImage;
+    public Animator rightImageAnimator;
+
+    Queue<Sentence> sentences;
 
     void Start()
     {
-        sentences = new Queue<string>();
+        sentences = new Queue<Sentence>();
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
         textBoxAnimator.SetBool("IsOpen", true);
         fadeAnimator.SetBool("IsOpen", true);
-        nameText.text = dialogue.name;
 
         sentences.Clear();
 
-        foreach(string sentence in dialogue.sentences)
+        foreach(Sentence s in dialogue.sentences)
         {
-            sentences.Enqueue(sentence);
+            sentences.Enqueue(s);
         }
 
         DisplayNextSentence();
@@ -42,9 +47,37 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        string sentence = sentences.Dequeue();
+        Sentence s = sentences.Dequeue();
+        nameText.fontSize = (s.speakerName.Length > 8)? 35: 50;
+
+        if(s.introduceSpeaker == true) 
+        {
+            if(s.isMC == true)
+            {
+                leftCharacterImage.sprite = s.talkerImage;
+                leftImageAnimator.SetBool("IsOpen", true);
+            }
+            else
+            {
+                rightCharacterImage.sprite = s.talkerImage;
+                rightImageAnimator.SetBool("IsOpen", true);
+            }
+        }
+
+        if(s.isMC == true) 
+        {
+            rightImageAnimator.SetBool("IsSpeaking", false);
+            leftImageAnimator.SetBool("IsSpeaking", true);
+        }
+        else
+        {
+            leftImageAnimator.SetBool("IsSpeaking", false);
+            rightImageAnimator.SetBool("IsSpeaking", true);
+        }
+
+        nameText.text = s.speakerName;
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(TypeSentence(s.sentenceText));
     }
 
     IEnumerator TypeSentence(string sentence) 
@@ -61,6 +94,11 @@ public class DialogueManager : MonoBehaviour
     {
         textBoxAnimator.SetBool("IsOpen", false);
         fadeAnimator.SetBool("IsOpen", false);
+
+        leftImageAnimator.SetBool("IsSpeaking", false);
+        rightImageAnimator.SetBool("IsSpeaking", false);
+        leftImageAnimator.SetBool("IsOpen", false);
+        rightImageAnimator.SetBool("IsOpen", false);
         Debug.Log("End of conversation.");
     }
 }
