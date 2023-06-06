@@ -91,7 +91,7 @@ public class Log : MonoBehaviour
         DisplayLog();
     }
 
-    void AddToLog(string object_name, string object_description)
+    public void AddToLog(string object_name, string object_description)
     {
         foreach (LogEntry le in playerLog)
         {
