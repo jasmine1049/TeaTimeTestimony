@@ -79,7 +79,7 @@ public class DetectionScript : MonoBehaviour
 
         if (player.position != initPlayerPosition)
         {
-            Debug.Log(timeLeft);
+            //Debug.Log(timeLeft);
             if (!countDown())
             {
                 if (tutorialText.text == "")

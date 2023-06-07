@@ -17,6 +17,8 @@ public class DialogueManager : MonoBehaviour
     public Image rightCharacterImage;
     public Animator rightImageAnimator;
 
+    public bool isTalking = false;
+
     Queue<Sentence> sentences;
 
     void Start()
@@ -26,9 +28,10 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        isTalking = true;
         textBoxAnimator.SetBool("IsOpen", true);
         fadeAnimator.SetBool("IsOpen", true);
-
+        
         sentences.Clear();
 
         foreach(Sentence s in dialogue.sentences)
@@ -50,45 +53,48 @@ public class DialogueManager : MonoBehaviour
         Sentence s = sentences.Dequeue();
         nameText.fontSize = (s.speakerName.Length > 8)? 35: 50;
 
-        if(s.introduceSpeaker == true) 
+        if(s.usesAnimation) 
         {
-            if(s.isMC == true)
+            if(s.introduceSpeaker == true) 
             {
-                leftCharacterImage.sprite = s.talkerImage;
-                leftImageAnimator.SetBool("IsOpen", true);
+                if(s.isMC == true)
+                {
+                    leftCharacterImage.sprite = s.talkerImage;
+                    leftImageAnimator.SetBool("IsOpen", true);
+                }
+                else
+                {
+                    rightCharacterImage.sprite = s.talkerImage;
+                    rightImageAnimator.SetBool("IsOpen", true);
+                }
             }
-            else
-            {
-                rightCharacterImage.sprite = s.talkerImage;
-                rightImageAnimator.SetBool("IsOpen", true);
-            }
-        }
 
-        if(s.removeSpeaker.Length > 0)
-        {
-            if(s.removeSpeaker[0] == true)
+            if(s.removeSpeaker.Length > 0)
             {
-                leftImageAnimator.SetBool("IsSpeaking", false);
-                leftImageAnimator.SetBool("IsOpen", false);
-            }
-            if(s.removeSpeaker[1] == true)
-            {
-                Debug.Log("remove right");
-                rightImageAnimator.SetBool("IsSpeaking", false);
-                rightImageAnimator.SetBool("IsOpen", false);
-            }
-        }
-        else
-        {
-            if(s.isMC == true) 
-            {
-                rightImageAnimator.SetBool("IsSpeaking", false);
-                leftImageAnimator.SetBool("IsSpeaking", true);
+                if(s.removeSpeaker[0] == true)
+                {
+                    leftImageAnimator.SetBool("IsSpeaking", false);
+                    leftImageAnimator.SetBool("IsOpen", false);
+                }
+                if(s.removeSpeaker[1] == true)
+                {
+                    Debug.Log("remove right");
+                    rightImageAnimator.SetBool("IsSpeaking", false);
+                    rightImageAnimator.SetBool("IsOpen", false);
+                }
             }
             else
             {
-                leftImageAnimator.SetBool("IsSpeaking", false);
-                rightImageAnimator.SetBool("IsSpeaking", true);
+                if(s.isMC == true) 
+                {
+                    rightImageAnimator.SetBool("IsSpeaking", false);
+                    leftImageAnimator.SetBool("IsSpeaking", true);
+                }
+                else
+                {
+                    leftImageAnimator.SetBool("IsSpeaking", false);
+                    rightImageAnimator.SetBool("IsSpeaking", true);
+                }
             }
         }
 
@@ -103,7 +109,7 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.025f); //wait 0.1 seconds before printing the next letter.
+            yield return new WaitForSeconds(0.025f); //wait 0.025 seconds before printing the next letter.
         }
     }
 
@@ -112,10 +118,15 @@ public class DialogueManager : MonoBehaviour
         textBoxAnimator.SetBool("IsOpen", false);
         fadeAnimator.SetBool("IsOpen", false);
 
-        leftImageAnimator.SetBool("IsSpeaking", false);
-        rightImageAnimator.SetBool("IsSpeaking", false);
-        leftImageAnimator.SetBool("IsOpen", false);
-        rightImageAnimator.SetBool("IsOpen", false);
+        if(leftImageAnimator != null && rightImageAnimator != null)
+        {
+            leftImageAnimator.SetBool("IsSpeaking", false);
+            rightImageAnimator.SetBool("IsSpeaking", false);
+            leftImageAnimator.SetBool("IsOpen", false);
+            rightImageAnimator.SetBool("IsOpen", false);
+        }
+
         Debug.Log("End of conversation.");
+        isTalking = false;
     }
 }

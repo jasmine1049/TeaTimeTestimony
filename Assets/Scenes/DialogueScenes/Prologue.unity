@@ -280,85 +280,117 @@ MonoBehaviour:
       talkerImage: {fileID: 21300000, guid: c8b92b8c5468c3c41b25cf7656decb72, type: 3}
       introduceSpeaker: 1
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: ' Aldo Ackmann'
       sentenceText: '*rummaging through a cabinet of case files.*'
       talkerImage: {fileID: 21300000, guid: 6404e1f10d1464d40b86bb68e3d83811, type: 3}
       introduceSpeaker: 1
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: Yes, Happy Anniversary Hubert.
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: "Aw, come on Aldo! Don\u2019t be so formal, we\u2019ve been partners
         for long enough to go by first names!"
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: "Well, even so I can\u2019t bring myself to do it."
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: Hah! You never change!
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: Anyway, I got us matching presents and champagne to celebrate!
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: '*Begins pouring champagne.*'
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: Really, Felix?
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: There! You just said it! My first name!
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: '*Grumbles* I suppose I did. Anyway, what was the present you
         had for us?'
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: "Matching watches Aldo, matching watches!  And they\u2019re fancy
         ones too."
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: "I\u2019m surprised the guy who pawned them off to me was so
         happy to get rid of them!"
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: Well thank you Hubert, I appreciate the gift.
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: "C\u2019mon, you can\u2019t be bothered to say it again?"
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: "\u2018Twas a slip of the tongue, that\u2019s all."
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: "Sure, whatever you say. Classic Aldo! Speaking of which, look
         at you now, rummaging through our case files like it\u2019s Monday afternoon!
@@ -366,6 +398,8 @@ MonoBehaviour:
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: "I will, I\u2019m just doing some cleaning. Our files didn\u2019t
         always look like such a mess, but now that they do they need to be put in
@@ -373,79 +407,109 @@ MonoBehaviour:
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: Whatever, Oldo.
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: "Huh?! What\u2019s this?"
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: A new nickname! Do you like it? *laughs*
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: "Shut up Felix! It\u2019s a case from 18XX."
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: "A case from 18XX? Why\u2019s it got you so tense?\r"
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: "The title! Bodies Found After Massive Blizzard Hits Edelweiss.\r"
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: Woah, creepy!
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: And, it was never found who committed the crime! Ever!
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: "As cold a case as they can get. Man, if it wasn\u2019t such
         an old mystery it\u2019d make for a great investigation.\r"
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: Agreed, Hubert. Agreed.
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Felix
       sentenceText: Now enough of that organizing, you deserve a break as much as
         me!
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Aldo
       sentenceText: 'Well, alright Hubert. To many more crime solving years! '
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: 
       sentenceText: They clink glasses. The watches make a sound, and begin to transport
         both of them back in time.
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
     - speakerName: Both
       sentenceText: WAGHHHH!
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
 --- !u!114 &139408726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,6 +1045,7 @@ MonoBehaviour:
   leftImageAnimator: {fileID: 631118287}
   rightCharacterImage: {fileID: 33855399}
   rightImageAnimator: {fileID: 33855401}
+  usesAnimation: 0
 --- !u!4 &364631547
 Transform:
   m_ObjectHideFlags: 0

@@ -12,4 +12,5 @@ public class Sentence
     public bool introduceSpeaker;
     public bool isMC;
     public bool[] removeSpeaker; // array size 2. true = remove this speaker. array[i] = remove speaker i.
+    public bool usesAnimation = true; //defaults to true bc i don't wanna replace the existing ones that already use animations ;))
 }

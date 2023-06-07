@@ -71,6 +71,8 @@ public class Log : MonoBehaviour
 
     public void LogPageForward()
     {
+        Debug.Log("Page Forward");
+
         if(activePosition + names.Length >= playerLog.Count)
         {
             return;
@@ -82,6 +84,8 @@ public class Log : MonoBehaviour
 
     public void LogPageBackward()
     {
+        Debug.Log("Page Backward");
+
         if(activePosition - names.Length < 0)
         {
             return;
