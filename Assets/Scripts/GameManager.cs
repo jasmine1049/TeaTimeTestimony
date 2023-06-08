@@ -19,4 +19,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public void EndGame()
+    {
+        Application.Quit();
+    }
 }
