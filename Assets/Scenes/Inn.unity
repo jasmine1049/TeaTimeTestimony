@@ -2569,7 +2569,7 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Luther
       sentenceText: "\u2026"
-      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
+      talkerImage: {fileID: 21300000, guid: 634808db4290cd94db183998c2c9ca0f, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -2765,7 +2765,7 @@ MonoBehaviour:
     - speakerName: Mia
       sentenceText: "M-Mrs. Hay, please! I don\u2019t t-think we should be yelling
         at these gentlemen\u2026"
-      talkerImage: {fileID: 21300000, guid: 35c91ddbf726fb44799cd4cc9c6005f7, type: 3}
+      talkerImage: {fileID: 21300000, guid: d1c79298d40d80c449de00e672c57e87, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -2780,7 +2780,7 @@ MonoBehaviour:
     - speakerName: Mia
       sentenceText: "Um\u2026I\u2019m M-Mia! I stay here to help Mrs. Hay with the
         customers\u2026so I can vouch for how comfy everything is! "
-      talkerImage: {fileID: 21300000, guid: 35c91ddbf726fb44799cd4cc9c6005f7, type: 3}
+      talkerImage: {fileID: 21300000, guid: d1c79298d40d80c449de00e672c57e87, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -2851,7 +2851,7 @@ MonoBehaviour:
     - speakerName: Mia
       sentenceText: 'Y-yes, I recall I was still helping Mrs. Hay clean and finish
         up for the day. '
-      talkerImage: {fileID: 21300000, guid: 35c91ddbf726fb44799cd4cc9c6005f7, type: 3}
+      talkerImage: {fileID: 21300000, guid: d1c79298d40d80c449de00e672c57e87, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -2902,7 +2902,7 @@ MonoBehaviour:
     - speakerName: Mia
       sentenceText: "Ah! Y-yes, it\u2019ll be up the stairs and to the right sirs.
         Y-you can\u2019t miss it!"
-      talkerImage: {fileID: 21300000, guid: 35c91ddbf726fb44799cd4cc9c6005f7, type: 3}
+      talkerImage: {fileID: 21300000, guid: d1c79298d40d80c449de00e672c57e87, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -5017,6 +5017,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899490153}
+  - component: {fileID: 1899490154}
   m_Layer: 5
   m_Name: InnManager
   m_TagString: Untagged
@@ -5044,6 +5045,31 @@ RectTransform:
   m_AnchoredPosition: {x: 960, y: 540}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1899490154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899490151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e01aecb69eef04ca08250ccb78d67a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dm: {fileID: 1254955786}
+  lastDialogue: {fileID: 1056652012}
+  continueButton: {fileID: 1031541004}
+  gm: {fileID: 1542257859}
+  nextScenePrompt:
+    sentences:
+    - speakerName: 
+      sentenceText: TO BE CONTINUED
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 0
 --- !u!1 &2002865394
 GameObject:
   m_ObjectHideFlags: 0

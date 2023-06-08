@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InnManager : MonoBehaviour
+public class ButcherManager : MonoBehaviour
 {
     public DialogueManager dm;
     public DialogueTrigger lastDialogue;
@@ -29,6 +29,6 @@ public class InnManager : MonoBehaviour
 
     void SwitchToInn()
     {
-        gm.SwitchScene("Menu");
+        gm.SwitchScene("Inn");
     }
 }

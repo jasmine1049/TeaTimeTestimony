@@ -1531,6 +1531,56 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &408768681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 408768683}
+  - component: {fileID: 408768682}
+  m_Layer: 5
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &408768682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408768681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b20bdb217a8b5745ab43258bfe6a86e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shouldDebug: 1
+--- !u!224 &408768683
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408768681}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 960, y: 540}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &409926960
 GameObject:
   m_ObjectHideFlags: 0
@@ -4012,7 +4062,7 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Karl
       sentenceText: "Alone\u2026 is one way to put it."
-      talkerImage: {fileID: 21300000, guid: 4409f577e3fd6e6478ebe78159249934, type: 3}
+      talkerImage: {fileID: 21300000, guid: f2e3326c2a4892447ba4f37ecbd41897, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -4174,7 +4224,7 @@ MonoBehaviour:
     - speakerName: Karl
       sentenceText: "What exactly are you assuming? Both of you? I could beat you
         into a pulp for just saying that\u2026"
-      talkerImage: {fileID: 21300000, guid: bdef0b47a5f24eb4388fc1ef78f37b71, type: 3}
+      talkerImage: {fileID: 21300000, guid: 713c14b0b4deef84eb8b4e475d5d4b7c, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -5202,6 +5252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1885424295}
+  - component: {fileID: 1885424296}
   m_Layer: 5
   m_Name: ButcherManager
   m_TagString: Untagged
@@ -5229,6 +5280,31 @@ RectTransform:
   m_AnchoredPosition: {x: 960, y: 540}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1885424296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885424294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f2859a9f68a9249af6ce9801bc6c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dm: {fileID: 1663002487}
+  lastDialogue: {fileID: 1634144667}
+  continueButton: {fileID: 110801210}
+  gm: {fileID: 1640882003}
+  nextScenePrompt:
+    sentences:
+    - speakerName: 
+      sentenceText: Continue to inn.
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 0
 --- !u!1 &1989840354
 GameObject:
   m_ObjectHideFlags: 0

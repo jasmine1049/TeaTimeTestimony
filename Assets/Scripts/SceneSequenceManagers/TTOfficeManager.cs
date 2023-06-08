@@ -9,9 +9,36 @@ public class TTOfficeManager : MonoBehaviour
     public Image fade;
     public DialogueTrigger startDialogue;
 
+    public DialogueManager dm;
+    public DialogueTrigger lastDialogue;
+    public Button continueButton;
+    bool goingThroughLastDialogue = false;
+    public GameManager gm;
+    public Dialogue nextScenePrompt;
+
     void Start()
     {
         StartCoroutine(FadeOutTransition());
+    }
+
+    void Update() 
+    {
+        if(goingThroughLastDialogue && !dm.isTalking)
+        {
+            continueButton.onClick.AddListener(SwitchToButcher);
+            goingThroughLastDialogue = false;
+            lastDialogue.triggered = false;
+            dm.StartDialogue(nextScenePrompt);
+        }
+        if(lastDialogue.triggered)
+        {
+            goingThroughLastDialogue = true;
+        }
+    }
+
+    void SwitchToButcher()
+    {
+        gm.SwitchScene("Butcher");
     }
 
     IEnumerator FadeOutTransition() 

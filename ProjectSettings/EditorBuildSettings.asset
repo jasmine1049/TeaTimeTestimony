@@ -6,36 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
-    guid: b71e513a794e0794cabc5f85c19ff5aa
+    path: Assets/Scenes/Menu.unity
+    guid: 74135983673927044859b9ec0d3e68bf
+  - enabled: 1
+    path: Assets/Scenes/DecoratedTutorial.unity
+    guid: 04f0654d7c8f744328e7785b8a887fed
+  - enabled: 1
+    path: Assets/Scenes/Inn.unity
+    guid: 3911f037c5023b04c96b8a69a899a595
+  - enabled: 1
+    path: Assets/Scenes/TTOffice.unity
+    guid: a43a798b5edda1742ba3e6b60ebb2828
+  - enabled: 1
+    path: Assets/Scenes/Office.unity
+    guid: 8c48c9ef3d5b841bfb750b66aba957b3
+  - enabled: 1
+    path: Assets/Scenes/Butcher.unity
+    guid: 271f5f358bc154a4c9db98ffc184b3de
   - enabled: 1
     path: Assets/Scenes/Setting Menu.unity
     guid: 7f3853924d4e543bc99e09e7117a1af8
   - enabled: 1
     path: Assets/Scenes/Rebind Settings Scene.unity
     guid: 09c100d0f8bf9415593fc786b8b424d5
-  - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/MapScene.unity
-    guid: 8b8980e64d0b2426ea3a4bb07c1b13ba
-  - enabled: 1
-    path: Assets/Scenes/Office.unity
-    guid: 8c48c9ef3d5b841bfb750b66aba957b3
-  - enabled: 1
-    path: Assets/Scenes/Log.unity
-    guid: 9e4e72467eb41b14f98da57fa7c9a33f
-  - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 74135983673927044859b9ec0d3e68bf
-  - enabled: 1
-    path: Assets/Scenes/Starting Scene.unity
-    guid: ff3e66dff94c14e3eb6d2ddbb1824e58
-  - enabled: 1
-    path: Assets/Scenes/DecoratedTutorial.unity
-    guid: 04f0654d7c8f744328e7785b8a887fed
-  - enabled: 1
-    path: Assets/Scenes/TTOffice.unity
-    guid: a43a798b5edda1742ba3e6b60ebb2828
   m_configObjects: {}
