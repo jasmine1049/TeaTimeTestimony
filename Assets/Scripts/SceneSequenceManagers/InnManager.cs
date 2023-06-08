@@ -29,6 +29,9 @@ public class InnManager : MonoBehaviour
 
     void SwitchToInn()
     {
+        GameObject m = FindObjectOfType<Music>().gameObject;
+        Debug.Log(m.name);
+        Destroy(m);
         gm.SwitchScene("Menu");
     }
 }
