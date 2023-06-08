@@ -100,7 +100,8 @@ public class DialogueManager : MonoBehaviour
 
         nameText.text = s.speakerName;
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(s.sentenceText));
+        dialogueText.text = s.sentenceText;
+        //StartCoroutine(TypeSentence(s.sentenceText));
     }
 
     IEnumerator TypeSentence(string sentence) 
