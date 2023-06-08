@@ -2835,14 +2835,14 @@ MonoBehaviour:
     sentences:
     - speakerName: Felix
       sentenceText: Woahhhh! What was that?!
-      talkerImage: {fileID: 21300000, guid: c8b92b8c5468c3c41b25cf7656decb72, type: 3}
+      talkerImage: {fileID: 21300000, guid: b69233b7a408d494f80768988ba2bae6, type: 3}
       introduceSpeaker: 1
       isMC: 1
       removeSpeaker: 
       usesAnimation: 1
     - speakerName: Aldo
       sentenceText: "*Making a frown.* I don\u2019t know, Felix\u2026"
-      talkerImage: {fileID: 21300000, guid: 6404e1f10d1464d40b86bb68e3d83811, type: 3}
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -2930,14 +2930,14 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Felix
       sentenceText: Woah!
-      talkerImage: {fileID: 21300000, guid: c8b92b8c5468c3c41b25cf7656decb72, type: 3}
+      talkerImage: {fileID: 21300000, guid: b69233b7a408d494f80768988ba2bae6, type: 3}
       introduceSpeaker: 1
       isMC: 1
       removeSpeaker: 
       usesAnimation: 1
     - speakerName: Aldo
       sentenceText: Officer, what is going on here?
-      talkerImage: {fileID: 21300000, guid: 6404e1f10d1464d40b86bb68e3d83811, type: 3}
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -2952,7 +2952,7 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Aldo
       sentenceText: "Returning? When we\u2014"
-      talkerImage: {fileID: 21300000, guid: 6404e1f10d1464d40b86bb68e3d83811, type: 3}
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -2976,7 +2976,7 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Aldo
       sentenceText: "I beg your\u2014!"
-      talkerImage: {fileID: 21300000, guid: 6404e1f10d1464d40b86bb68e3d83811, type: 3}
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -2984,7 +2984,7 @@ MonoBehaviour:
     - speakerName: Felix
       sentenceText: "Pardon my partner, here, sir. We\u2019re an up and coming detective
         duo, recently assigned to this here teensy village, and we decided to!"
-      talkerImage: {fileID: 21300000, guid: c8b92b8c5468c3c41b25cf7656decb72, type: 3}
+      talkerImage: {fileID: 21300000, guid: b69233b7a408d494f80768988ba2bae6, type: 3}
       introduceSpeaker: 0
       isMC: 1
       removeSpeaker: 0001
@@ -3007,7 +3007,7 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Aldo
       sentenceText: "What are you\u2014"
-      talkerImage: {fileID: 21300000, guid: 6404e1f10d1464d40b86bb68e3d83811, type: 3}
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -3056,7 +3056,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: 
   itemDescription: 
-  dialogueTrigger: {fileID: 1091888682}
+  dialogueTriggers:
+  - {fileID: 1091888677}
 --- !u!212 &1091888679
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3154,7 +3155,7 @@ MonoBehaviour:
     - speakerName: Felix
       sentenceText: First of all, a huge amount of the window is shattered, indicating
         that it was someone especially large who broke in.
-      talkerImage: {fileID: 21300000, guid: c8b92b8c5468c3c41b25cf7656decb72, type: 3}
+      talkerImage: {fileID: 21300000, guid: b69233b7a408d494f80768988ba2bae6, type: 3}
       introduceSpeaker: 1
       isMC: 1
       removeSpeaker: 
@@ -3194,7 +3195,7 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Aldo
       sentenceText: Because they couldn't find what they were looking for.
-      talkerImage: {fileID: 21300000, guid: 6404e1f10d1464d40b86bb68e3d83811, type: 3}
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -3234,7 +3235,7 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Aldo
       sentenceText: Perhaps, officer.
-      talkerImage: {fileID: 21300000, guid: 6404e1f10d1464d40b86bb68e3d83811, type: 3}
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -3265,7 +3266,7 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Aldo
       sentenceText: "Actually no\u2026 we\u2019ll have to see them later."
-      talkerImage: {fileID: 21300000, guid: 6404e1f10d1464d40b86bb68e3d83811, type: 3}
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
@@ -4771,7 +4772,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588990754}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5558,7 +5559,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805701197}
   m_LocalRotation: {x: 0.27542156, y: -0, z: -0, w: 0.96132356}
-  m_LocalPosition: {x: 0, y: 5.23, z: -7.71}
+  m_LocalPosition: {x: 0, y: 5.1, z: -7.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5753,8 +5754,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -625, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -425, y: -2.8848}
+  m_SizeDelta: {x: 544.3865, y: 640.2305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1983907530
 Animator:

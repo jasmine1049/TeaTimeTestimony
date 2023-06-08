@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class DialogueInteract : Interactable
 {
-    public DialogueTrigger dialogueTrigger;
+    public DialogueTrigger[] dialogueTriggers;
+    int currentDialogue = 0;
 
     override public void Interact(GameObject player) 
     {
-        dialogueTrigger.TriggerDialogue();
+        if(currentDialogue >= dialogueTriggers.Length)
+        {
+            return;
+        }
+        dialogueTriggers[currentDialogue].TriggerDialogue();
+        currentDialogue++;
     }
 }

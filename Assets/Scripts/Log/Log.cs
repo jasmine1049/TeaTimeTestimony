@@ -32,11 +32,6 @@ public class Log : MonoBehaviour
         playerLog = new List<LogEntry>();
         logObject.SetActive(false);
         pageLength = names.Length;
-        AddToLog("apple", "this is an apple");
-        AddToLog("banana", "this is a banana");
-        AddToLog("pancake", "this is a pancake");
-        AddToLog("toast", "this is toast");
-        AddToLog("hamburger", "this is hamburger");
     }
 
     private void OnLog() 
