@@ -2569,7 +2569,7 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Luther
       sentenceText: "\u2026"
-      talkerImage: {fileID: 21300000, guid: 634808db4290cd94db183998c2c9ca0f, type: 3}
+      talkerImage: {fileID: 21300000, guid: e1a1120fe06dd0d4da1d0f8968e03486, type: 3}
       introduceSpeaker: 1
       isMC: 0
       removeSpeaker: 
