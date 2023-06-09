@@ -25,7 +25,7 @@ public class TTOfficeManager : MonoBehaviour
     {
         if(goingThroughLastDialogue && !dm.isTalking)
         {
-            continueButton.onClick.AddListener(SwitchToButcher);
+            continueButton.onClick.AddListener(SwitchToInn);
             goingThroughLastDialogue = false;
             lastDialogue.triggered = false;
             dm.StartDialogue(nextScenePrompt);
@@ -36,9 +36,9 @@ public class TTOfficeManager : MonoBehaviour
         }
     }
 
-    void SwitchToButcher()
+    void SwitchToInn()
     {
-        gm.SwitchScene("Butcher");
+        gm.SwitchScene("Inn");
     }
 
     IEnumerator FadeOutTransition() 

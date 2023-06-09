@@ -1177,6 +1177,349 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &293723537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 293723542}
+  - component: {fileID: 293723541}
+  - component: {fileID: 293723540}
+  - component: {fileID: 293723539}
+  - component: {fileID: 293723538}
+  m_Layer: 0
+  m_Name: Grocer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &293723538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293723537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 521a86c7853910c439b9adc1fa9b8d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - speakerName: Redmond
+      sentenceText: I see you two are working on cracking this case of the missing
+        people, yes?
+      talkerImage: {fileID: 21300000, guid: bfc16beec057ca048b1db5100abb17b8, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Felix
+      sentenceText: "H-How\u2019d you know?! I didn\u2019t even ask anything\u2026"
+      talkerImage: {fileID: 21300000, guid: b69233b7a408d494f80768988ba2bae6, type: 3}
+      introduceSpeaker: 1
+      isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Redmond
+      sentenceText: 'You were rather loud talking to the butcher over there, to be
+        quite frank. '
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Felix
+      sentenceText: "Man, this guy gives me the creeps\u2026"
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Redmond
+      sentenceText: Heard that too, young detective.
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Aldo
+      sentenceText: '*old man sigh* I apologize about him... What should we call
+        you, sir?'
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Redmond
+      sentenceText: "My name is Redmond, I run Edelweiss\u2019 supermarket. I originally
+        came to restock on some cured meats from Karl, but it\u2019s not everyday
+        you get something this interesting in this quiet village. "
+      talkerImage: {fileID: 21300000, guid: bfc16beec057ca048b1db5100abb17b8, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Redmond
+      sentenceText: "I keep my ears perked up for anything new! The papers are hardly
+        ever this interesting\u2026"
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Felix
+      sentenceText: "So\u2026 you\u2019re kind of like the town\u2019s gossiper,
+        huh?"
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Aldo
+      sentenceText: Felix-
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Redmond
+      sentenceText: "Haha, what a peculiar way of putting it! I just like to stay
+        well-informed. I\u2019m sure you detectives understand how important it is
+        to be thorough, right?"
+      talkerImage: {fileID: 21300000, guid: bfc16beec057ca048b1db5100abb17b8, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Felix
+      sentenceText: Well, yeah!
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Redmond
+      sentenceText: Lots of people in this quiet town forget to have a brain of their
+        own sometimes.
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Aldo
+      sentenceText: "Mrs. Hay, the Innkeeper, suggested talking to you about these
+        missing people and how it might be connected to this \u201CKrampus\u201D.
+        Any information you have for us?"
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Redmond
+      sentenceText: "Mrs. Hay said that? Well, between you and I, I think she\u2019s
+        quite the storyteller. To believe that there\u2019s this monster lurking
+        amongst our village is a crazy thought! But an entertaining one nonetheless\u2026"
+      talkerImage: {fileID: 21300000, guid: bfc16beec057ca048b1db5100abb17b8, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Felix
+      sentenceText: "So, what\u2019re you saying?\r"
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Redmond
+      sentenceText: "I\u2019m saying that behind every tall tale like \u201CKrampus\u201D
+        lies some realistic truths.\r\nBeings that punish \u201Cnaughty children\u201D
+        are often used by parents to keep those little gremlins in line. \r"
+      talkerImage: {fileID: 21300000, guid: bfc16beec057ca048b1db5100abb17b8, type: 3}
+      introduceSpeaker: 0
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Aldo
+      sentenceText: Are you saying that there might be someone real parading around
+        as the Krampus?
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Redmond
+      sentenceText: "I believe that\u2019s your job to figure out, detectives.\r\nI\u2019m
+        just a mere grocer after all!\r"
+      talkerImage: {fileID: 21300000, guid: bfc16beec057ca048b1db5100abb17b8, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Felix
+      sentenceText: "That\u2019s it? I think you\u2019re just beating around the
+        bush, Redmond."
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Redmond
+      sentenceText: "Haha! Careful now, young detective, maybe the \u201CKrampus\u201D
+        is after you next\u2026"
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Felix
+      sentenceText: "G-GAH! How do I know that you\u2019re not this Krampus?!"
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Redmond
+      sentenceText: Do you want my alibi? Simple. My store is open until very late
+        hours. I have no one else but myself to manage the store, and I have several
+        late night loyal customers to vouch for my innocence, as well.
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Aldo
+      sentenceText: "Hmph. Seems plausible enough.\r\nThank you for your help, Mr.
+        Redmond.\r"
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Redmond
+      sentenceText: "Good luck on the case, detectives.\r\nAnd be safe.\r"
+      talkerImage: {fileID: 21300000, guid: bfc16beec057ca048b1db5100abb17b8, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Felix
+      sentenceText: Right back at ya, creepy grocer!
+      talkerImage: {fileID: 0}
+      introduceSpeaker: 0
+      isMC: 1
+      removeSpeaker: 
+      usesAnimation: 1
+    - speakerName: Aldo
+      sentenceText: "Felix\u2014"
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
+      removeSpeaker: 
+      usesAnimation: 1
+  triggered: 0
+--- !u!114 &293723539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293723537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e0f7ca9bc85dd48ab14abe5e750949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemDescription: 
+  dialogueTriggers:
+  - {fileID: 293723538}
+--- !u!212 &293723540
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293723537}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 749e7f5d46140b44e950df79a21b477c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 20, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!65 &293723541
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293723537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.257045, y: 1, z: 199.01497}
+  m_Center: {x: 0.027633673, y: 0, z: -79.507645}
+--- !u!4 &293723542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293723537}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.64, y: 0.67, z: 1.79}
+  m_LocalScale: {x: 1.2165022, y: 1.1883178, z: 0.01}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &342815491
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,7 +1917,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3453,7 +3796,7 @@ RectTransform:
   m_Children:
   - {fileID: 1219031651}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3956,7 +4299,7 @@ MonoBehaviour:
       removeSpeaker: 
       usesAnimation: 1
     - speakerName: Karl Alsbach
-      sentenceText: Welcome to my butcher shop. What kind of meat would you like?
+      sentenceText: Welcome to my shop. What cut of meat would you like?
       talkerImage: {fileID: 21300000, guid: 374af484ba9bb094aa821fdcd663c319, type: 3}
       introduceSpeaker: 1
       isMC: 0
@@ -3964,7 +4307,7 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Felix
       sentenceText: "Hold the meat and pass the answers buddy! Where were you on
-        the night that\u2013"
+        the night that\u2014"
       talkerImage: {fileID: 21300000, guid: b69233b7a408d494f80768988ba2bae6, type: 3}
       introduceSpeaker: 1
       isMC: 1
@@ -3984,18 +4327,18 @@ MonoBehaviour:
       isMC: 1
       removeSpeaker: 
       usesAnimation: 1
-    - speakerName: Felix
+    - speakerName: Karl
       sentenceText: So, no meat?
-      talkerImage: {fileID: 0}
-      introduceSpeaker: 0
-      isMC: 1
+      talkerImage: {fileID: 21300000, guid: 374af484ba9bb094aa821fdcd663c319, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
       removeSpeaker: 
       usesAnimation: 1
-    - speakerName: Felix
-      sentenceText: Butcher! What is your name?
-      talkerImage: {fileID: 0}
-      introduceSpeaker: 0
-      isMC: 1
+    - speakerName: Aldo
+      sentenceText: I am afraid not. Could I bother you for your name?
+      talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
+      introduceSpeaker: 1
+      isMC: 0
       removeSpeaker: 
       usesAnimation: 1
     - speakerName: Karl
@@ -4014,8 +4357,9 @@ MonoBehaviour:
       removeSpeaker: 
       usesAnimation: 1
     - speakerName: Aldo
-      sentenceText: Mr. Alsbach, if you could lend us some of your time? We need
-        to ask some witnesses for the night people had gone missing.
+      sentenceText: "Mr. Alsbach, if you could lend us some of your time? My partner
+        and I are detectives. We\u2019re gathering witness testimony from last night,
+        when someone went missing."
       talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
       introduceSpeaker: 1
       isMC: 0
@@ -4030,7 +4374,7 @@ MonoBehaviour:
       removeSpeaker: 
       usesAnimation: 1
     - speakerName: Aldo
-      sentenceText: 'Thank you, sir. '
+      sentenceText: Thank you, sir.
       talkerImage: {fileID: 21300000, guid: abc5abecd8531f34f8341d9b66e45270, type: 3}
       introduceSpeaker: 1
       isMC: 0
@@ -4092,7 +4436,8 @@ MonoBehaviour:
       removeSpeaker: 
       usesAnimation: 1
     - speakerName: Karl
-      sentenceText: Day to day tasks are far easier for me than for the average person.
+      sentenceText: "Eh. Daily tasks aren\u2019t much of a bother. But I\u2019ve
+        been told I can do the work of three men."
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
@@ -4146,7 +4491,7 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Karl
       sentenceText: "Ah, yes, my prized possession. Shop wouldn\u2019t be the same
-        without it.\r"
+        without it."
       talkerImage: {fileID: 21300000, guid: 374af484ba9bb094aa821fdcd663c319, type: 3}
       introduceSpeaker: 1
       isMC: 0
@@ -4162,7 +4507,7 @@ MonoBehaviour:
       usesAnimation: 1
     - speakerName: Karl
       sentenceText: "For my job, of course. I wouldn\u2019t be able to hunt game
-        without it."
+        without it. "
       talkerImage: {fileID: 21300000, guid: 374af484ba9bb094aa821fdcd663c319, type: 3}
       introduceSpeaker: 1
       isMC: 0
@@ -4198,18 +4543,15 @@ MonoBehaviour:
       removeSpeaker: 
       usesAnimation: 1
     - speakerName: Karl
-      sentenceText: Ten easily, fifteen to push it.
-      talkerImage: {fileID: 21300000, guid: 374af484ba9bb094aa821fdcd663c319, type: 3}
+      sentenceText: Ten easily. Maybe fifteen if I got creative.
+      talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
       removeSpeaker: 
       usesAnimation: 1
     - speakerName: Felix
-      sentenceText: 'And do people such as yourself fit comfortably in said meat
-        locker?
-
-'
-      talkerImage: {fileID: 21300000, guid: 063542617223be8458bd85175c7d3dcf, type: 3}
+      sentenceText: And do people such as yourself fit comfortably in said meat locker?
+      talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 1
       removeSpeaker: 
@@ -4237,9 +4579,9 @@ MonoBehaviour:
       removeSpeaker: 
       usesAnimation: 1
     - speakerName: Karl
-      sentenceText: "I\u2019ll have you know I only keep animal remains in that meat
-        locker. If you two are suggesting that I am keeping human beings in there?
-        I kindly suggest for you to leave my store in peace."
+      sentenceText: "I\u2019ll have you know I only keep animal meat in that locker.
+        If you two are suggesting that I am keeping human beings in there, I kindly
+        suggest for you to leave my store in peace!"
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
@@ -4393,7 +4735,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4451,7 +4793,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1697024212
 GameObject:
@@ -4646,7 +4988,7 @@ RectTransform:
   - {fileID: 1989840355}
   - {fileID: 409926961}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5101,7 +5443,7 @@ RectTransform:
   m_Children:
   - {fileID: 1326591500}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5273,7 +5615,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5293,18 +5635,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dm: {fileID: 1663002487}
-  lastDialogue: {fileID: 1634144667}
+  butcherDialogue: {fileID: 1634144667}
   continueButton: {fileID: 110801210}
   gm: {fileID: 1640882003}
   nextScenePrompt:
     sentences:
     - speakerName: 
-      sentenceText: Continue to inn.
+      sentenceText: TO BE CONTINUED
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0
       removeSpeaker: 
       usesAnimation: 0
+  grocer: {fileID: 293723537}
 --- !u!1 &1989840354
 GameObject:
   m_ObjectHideFlags: 0

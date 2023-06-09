@@ -4465,7 +4465,7 @@ MonoBehaviour:
   nextScenePrompt:
     sentences:
     - speakerName: 
-      sentenceText: Continue to butcher.
+      sentenceText: Continue to Inn.
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0

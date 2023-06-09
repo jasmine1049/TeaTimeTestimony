@@ -5064,7 +5064,7 @@ MonoBehaviour:
   nextScenePrompt:
     sentences:
     - speakerName: 
-      sentenceText: TO BE CONTINUED
+      sentenceText: Continue to Butcher.
       talkerImage: {fileID: 0}
       introduceSpeaker: 0
       isMC: 0

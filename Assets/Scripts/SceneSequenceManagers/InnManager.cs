@@ -16,7 +16,7 @@ public class InnManager : MonoBehaviour
     {
         if(goingThroughLastDialogue && !dm.isTalking)
         {
-            continueButton.onClick.AddListener(SwitchToInn);
+            continueButton.onClick.AddListener(SwitchToButcher);
             goingThroughLastDialogue = false;
             lastDialogue.triggered = false;
             dm.StartDialogue(nextScenePrompt);
@@ -27,11 +27,8 @@ public class InnManager : MonoBehaviour
         }
     }
 
-    void SwitchToInn()
+    void SwitchToButcher()
     {
-        GameObject m = FindObjectOfType<Music>().gameObject;
-        Debug.Log(m.name);
-        Destroy(m);
-        gm.SwitchScene("Menu");
+        gm.SwitchScene("Butcher");
     }
 }

@@ -6,29 +6,40 @@ using UnityEngine.UI;
 public class ButcherManager : MonoBehaviour
 {
     public DialogueManager dm;
-    public DialogueTrigger lastDialogue;
+    public DialogueTrigger butcherDialogue;
     public Button continueButton;
     bool goingThroughLastDialogue = false;
     public GameManager gm;
     public Dialogue nextScenePrompt;
 
+    public GameObject grocer;
+    DialogueTrigger grocerDialogue;
+
+    void Start() 
+    {
+        grocer.SetActive(false);
+    }
+
     void Update() 
     {
-        if(goingThroughLastDialogue && !dm.isTalking)
+        if(butcherDialogue.triggered && !dm.isTalking)
         {
-            continueButton.onClick.AddListener(SwitchToInn);
-            goingThroughLastDialogue = false;
-            lastDialogue.triggered = false;
-            dm.StartDialogue(nextScenePrompt);
+            grocer.SetActive(true);
+            grocerDialogue = grocer.GetComponent<DialogueTrigger>();
+            butcherDialogue.triggered = false;
         }
-        if(lastDialogue.triggered)
+        if(grocerDialogue != null && grocerDialogue.triggered && !dm.isTalking) 
         {
-            goingThroughLastDialogue = true;
+            continueButton.onClick.AddListener(SwitchToMainMenu);
+            grocerDialogue.triggered = false;
+            dm.StartDialogue(nextScenePrompt);
         }
     }
 
-    void SwitchToInn()
+    void SwitchToMainMenu()
     {
-        gm.SwitchScene("Inn");
+        GameObject m = FindObjectOfType<Music>().gameObject;
+        Destroy(m);
+        gm.SwitchScene("Menu");
     }
 }
